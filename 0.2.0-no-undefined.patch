@@ -1,0 +1,10 @@
+--- origsrc/mash-0.2.0/mash/Makefile.am	2011-09-12 11:08:11.000000000 -0500
++++ src/mash-0.2.0/mash/Makefile.am	2011-11-19 23:42:48.752989400 -0600
+@@ -65,6 +65,7 @@ nodist_mash_HEADERS = \
+ 	$(built_source_h)
+ 
+ libmash_@MASH_API_VERSION@_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info "@MASH_LT_CURRENT@:@MASH_LT_REVISION@:@MASH_LT_AGE@"
+ 
+ libmash_@MASH_API_VERSION@_la_LIBADD = \
