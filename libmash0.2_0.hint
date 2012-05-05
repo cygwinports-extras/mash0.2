@@ -1,5 +1,5 @@
 category: X11
-requires: libclutter1.0_0 libcogl5 libglib2.0_0
+requires: libclutter1.0_0 libcogl9 libglib2.0_0
 external-source: mash0.2
 sdesc: "Clutter 3D model library (runtime)"
 ldesc: "Mash is a small library for using real 3D models within a 
