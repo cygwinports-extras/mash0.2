@@ -4,8 +4,8 @@ inherit gnome2 git
 
 NAME="mash0.2"
 VERSION=0.2.0
-RELEASE=3
-CATEGORY="X11"
+RELEASE=4
+CATEGORY="Libs"
 SUMMARY="Clutter 3D model library"
 DESCRIPTION="Mash is a small library for using real 3D models within a Clutter
 scene. Models can be exported from Blender or other 3D modelling software as
@@ -16,7 +16,10 @@ HOMEPAGE="http://clutter-project.org/"
 PATCH_URI="0.2.0-no-undefined.patch
 	   0.2.0-gtk-doc-version.patch"
 
-PKG_NAMES="lib${PN}_0 lib${PN}-devel girepository-Mash0.2"
+PKG_NAMES="lib${NAME}_0 lib${NAME}-devel girepository-Mash0.2"
 libmash0_2_0_CONTENTS="usr/bin/cygmash-0.2-0.dll usr/share/doc/"
 libmash0_2_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_Mash0_2_CONTENTS="usr/*/gir*/Mash-0.2.*"
+
+# requires $(builddir)
+WANT_AUTOMAKE=1.10
